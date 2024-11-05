@@ -1,14 +1,14 @@
-from functools import partial
-import datetime
-import random
-import time
 import os
+import time
 import uuid
-import torch 
-import gradio as gr
-import atexit
 import shutil
+import random
+import datetime
+import atexit
+from functools import partial
 
+import torch
+import gradio as gr
 
 from log_utils import build_logger, store_data_in_hub
 
