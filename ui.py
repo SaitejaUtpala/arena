@@ -109,7 +109,7 @@ def vote_last_response(vote_type, state0, state1, model_selector0, model_selecto
         download_b_btn = gr.update(
             label = "📥 Download embedding for model B", value=state1.query_embed_file_path, visible=True
         )
-        return_state = return_state + (download_a_btn, download_b_btn )
+        return_state = return_state + (download_a_btn, download_b_btn)
     return return_state
 
 def vote_last_response_sts(vote_type, state0, state1, model_selector0, model_selector1, request: gr.Request):
