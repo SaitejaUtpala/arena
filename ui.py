@@ -98,7 +98,7 @@ def vote_last_response(vote_type, state0, state1, model_selector0, model_selecto
  
     return_state = ("Press 🎲 New Round to start over 👇 (Note: Your vote shapes the leaderboard, please vote RESPONSIBLY!)",) + disable_btns(4) 
     if model_selector0 == "":
-        return_state  = return_state +  (gr.Markdown(f"### Model A: {state0.model_name}", visible=True), gr.Markdown(f"### Model B: {state1.model_name}", visible=True))
+        return_state  = return_state + (gr.Markdown(f"### Model A: {state0.model_name}", visible=True), gr.Markdown(f"### Model B: {state1.model_name}", visible=True))
     else: 
         return_state = return_state + (gr.Markdown(state0.model_name, visible=True), gr.Markdown(state1.model_name, visible=True))
     
