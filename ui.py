@@ -55,7 +55,7 @@ def clear_history_side_by_side(state0, state1):
     cleanup_dirs(os.path.dirname(state0.query_embed_file_path), os.path.dirname(state1.query_embed_file_path))
     return None, None, "", None, None, gr.DownloadButton(visible=False), gr.DownloadButton(visible=False)
 def clear_history_side_by_side_anon(state0, state1):
-    cleanup_dirs( os.path.dirname(state0.query_embed_file_path), os.path.dirname(state1.query_embed_file_path))
+    cleanup_dirs(os.path.dirname(state0.query_embed_file_path), os.path.dirname(state1.query_embed_file_path))
     return None, None, "", None, None, gr.Markdown("", visible=False), gr.Markdown("", visible=False), gr.DownloadButton(visible=False), gr.DownloadButton(visible=False)
 def clear_history_side_by_side_anon_sts():
     return None, None, "", "", "",  None, None, gr.Markdown("", visible=False), gr.Markdown("", visible=False)
